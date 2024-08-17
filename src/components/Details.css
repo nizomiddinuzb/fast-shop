@@ -1,0 +1,159 @@
+#root{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container {
+  background-color: #333;
+
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.container svg {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flex button {
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.flex button:hover {
+  background-color: #0d47a1;
+}
+
+.flex h1 {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  animation-delay: -1s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+h1, h2,p{
+  color: #000000;
+}
+
+
+.todo {
+  position: fixed;
+  top: 20%;
+  right: 2%;
+  width: 300px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.todo h3 {
+  margin-top: 0;
+  color: #343a40;
+  font-size: 1.2rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.todo-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.todo-item p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.todo-item p strong {
+  font-size: 1rem;
+  color: #495057;
+}
